@@ -8,3 +8,7 @@ var instance = new vidbg('.video', {
 });
 
 var relax = new Rellax('.rocket');
+
+if (document.body.clientWidth < 576) {
+  relax.destroy();
+}
